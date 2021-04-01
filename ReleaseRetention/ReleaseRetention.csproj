@@ -2,11 +2,20 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
+	  <TargetFramework>net5.0</TargetFramework>
+	  <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Start Here - Instructions - Release Retention.md" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Json\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ReleaseRetention.Library\ReleaseRetention.Library.csproj" />
   </ItemGroup>
 
 </Project>
